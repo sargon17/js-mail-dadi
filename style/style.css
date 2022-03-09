@@ -102,17 +102,30 @@
 .mt__btn:active {
   transform: scale(0.95);
 }
+.mt__inline-btn {
+  cursor: pointer;
+}
+
 .mt__error-msg {
   opacity: 0;
   color: var(--red);
+  transform: scale(0);
+  transition: all 0.1s ease-in-out;
 }
-.mt__error-msg--show {
+.mt__success-msg {
+  opacity: 0;
+  color: var(--green);
+  transform: scale(0);
+  transition: all 0.1s ease-in-out;
+}
+.mt__msg--show {
   opacity: 1;
+  transform: scale(1);
 }
 /* ---------------- / COMPONENTS ------------------- */
 
 body {
   background: var(--black) url(../img/bg.jpg) top;
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
 }

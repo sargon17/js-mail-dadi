@@ -30,22 +30,27 @@
                 </div>
                 <div class="row">
                     <div class="col-9">
-                        <input class="mt__input" type="email" placeholder="example@mail.com">
+                        <input class="mt__input" type="email" placeholder="example@mail.com" id="emailInput">
                     </div>
                     <div class="col-3">
-                        <button class="mt__btn">
+                        <button class="mt__btn" id="emailBtn">
                             log in
                         </button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="mt__error-msg position-absolute">This e-mail is not valid, please
+                        <p class="mt__error-msg position-absolute" id="emailErrorMsg">This e-mail is not valid, please
+                            <span href="" class="mt__inline-btn mt__color-red text-decoration-underline"
+                                id="addNewMailBtn">add
+                                it to
+                                the list</span> or
                             try another one</p>
+                        <p class="mt__success-msg position-absolute fw-bold" id="emailSuccessMsg">Great, the
+                            email is
+                            right</p>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
