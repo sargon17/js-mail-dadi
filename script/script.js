@@ -37,13 +37,28 @@ function checkMail(mail, database) {
     }
   }
 }
-//---------------------- / FUNCTIONS ----------------------------
 
 //function to ad an e-mail to the valid ones
 function addNewMail(mail, database) {
   database.push(mail);
   emailErrorMsg.classList.remove("mt__msg--show");
 }
+
+function singleDiceGame() {
+  let pcScores = Math.floor(Math.random() * 6 + 1);
+  let playerScores = Math.floor(Math.random() * 6 + 1);
+  pcResult.innerHTML = pcScores;
+  playerResult.innerHTML = playerScores;
+
+  if (pcScores === playerScores) {
+    resultMsg.innerHTML = "Ops... no winner";
+  } else if (pcScores > playerScores) {
+    resultMsg.innerHTML = "You lose, try again";
+  } else {
+    resultMsg.innerHTML = "Great, you won!";
+  }
+}
+//---------------------- / FUNCTIONS ----------------------------
 
 // -------------------------- Event Listeners --------------------
 emailBtn.addEventListener("click", () => {
@@ -60,5 +75,9 @@ addNewMailBtn.addEventListener("click", () => {
 });
 
 //----------------------------------------------------------------
+playBtn.addEventListener("click", () => {
+  singleDiceGame();
+  playBtn.innerHTML = "Play Again";
+});
 
 // -------------------------- / Event Listeners --------------------
