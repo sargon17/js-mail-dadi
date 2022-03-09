@@ -1,0 +1,118 @@
+:root {
+  --black: #231f20;
+  --white: #f0edee;
+  --purple: #52528c;
+  --green: #07393c;
+  --light-green: #2c666e;
+  --red: #ee7575;
+}
+* {
+  font-family: "Mandai", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.mt__t-medium {
+  font-size: 1.618rem;
+}
+.mt__t-big {
+  font-size: 2.618rem;
+}
+.mt__t-giant {
+  font-size: 1.618rem;
+}
+
+.mt__title-font {
+  font-family: "Ubuntu", sans-serif;
+}
+.mt__subtitle-font {
+  font-family: "Mandali", sans-serif;
+}
+.mt__text-font {
+  font-family: "Mukta Vaani", sans-serif;
+}
+.mt__color-white {
+  color: var(--white);
+}
+.mt__background-white {
+  background: var(--white);
+}
+.mt__color-black {
+  color: var(--black);
+}
+.mt__background-black {
+  background: var(--black);
+}
+.mt__color-purple {
+  color: var(--purple);
+}
+.mt__background-purple {
+  background: var(--purple);
+}
+.mt__color-green {
+  color: var(--green);
+}
+.mt__background-green {
+  background: var(--green);
+}
+.mt__color-light-green {
+  color: var(--light-green);
+}
+.mt__background-light-green {
+  background: var(--light-green);
+}
+.mt__color-red {
+  color: var(--red);
+}
+.mt__background-red {
+  background: var(--red);
+}
+.mt__background-transparent-white {
+  background: rgba(250, 247, 248, 0.3);
+}
+
+/* ---------------- COMPONENTS ------------------- */
+.mt__card {
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 36px;
+}
+.mt__input {
+  background: none;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  color: var(--white);
+}
+.mt__input::placeholder {
+  color: #f0edee50;
+}
+
+.mt__btn {
+  background: var(--light-green);
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  color: var(--white);
+  transition: all 0.3s ease-in-out, transform 0.04s ease-in-out;
+}
+.mt__btn:hover {
+  background-color: #07393c;
+}
+.mt__btn:active {
+  transform: scale(0.95);
+}
+.mt__error-msg {
+  opacity: 0;
+  color: var(--red);
+}
+.mt__error-msg--show {
+  opacity: 1;
+}
+/* ---------------- / COMPONENTS ------------------- */
+
+body {
+  background: var(--black) url(../img/bg.jpg) top;
+  background-size: 100%;
+  width: 100%;
+}
