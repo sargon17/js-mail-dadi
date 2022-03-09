@@ -17,7 +17,7 @@
   font-size: 2.618rem;
 }
 .mt__t-giant {
-  font-size: 1.618rem;
+  font-size: 6.854rem;
 }
 
 .mt__title-font {
@@ -128,4 +128,10 @@ body {
   background: var(--black) url(../img/bg.jpg) top;
   background-size: cover;
   width: 100%;
+}
+.mt__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

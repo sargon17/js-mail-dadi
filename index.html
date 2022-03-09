@@ -14,6 +14,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mandali&family=Mukta+Vaani:wght@200;400&family=Ubuntu:ital,wght@0,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/style.css">
 
     <title>Email dadi</title>
@@ -48,8 +51,66 @@
                             try another one</p>
                         <p class="mt__success-msg position-absolute fw-bold" id="emailSuccessMsg">Great, the
                             email is
-                            right</p>
+                            right, <a href="#game" class="mt__color-green">play now</a></p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt__container">
+
+        <div class="container" id="game">
+            <div class="row justify-content-center m-5">
+                <div class="col-auto text-center">
+                    <h1 class="mt__color-white mt__title-font mt__t-giant fw-bolder fst-italic">Random numbers</h1>
+                    <p class="mt__text-font mt__color-white mt__t-medium fw-light">Try your luck by playing dice, the
+                        winner
+                        is the
+                        one who draws the largest
+                        number</p>
+                </div>
+            </div>
+            <div class="row m-5 g-3 justify-content-center">
+                <div class="col-2">
+                    <div class="mt__card mt__background-red text-center">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <i class="fas fa-robot mt__color-white mt__t-medium"></i>
+                            </div>
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <span id="pcResult" class="mt__color-white mt__title-font mt__t-big fw-bolder">6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mt__card mt__background-transparent-white">
+                        <p id="resultMsg" class="mt__color-white text-center mt__text-font mt__t-big m-0">Great, you
+                            won!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="mt__card mt__background-purple">
+
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-user mt__color-white mt__t-medium"></i>
+                            </div>
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <span id="playerResult"
+                                    class="mt__color-white mt__title-font mt__t-big fw-bolder">6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2">
+                    <button class="mt__btn" id="playBtn">
+                        Play
+                    </button>
+
                 </div>
             </div>
         </div>
