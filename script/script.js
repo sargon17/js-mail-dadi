@@ -53,7 +53,7 @@ function singleDiceGame() {
   if (pcScores === playerScores) {
     resultMsg.innerHTML = "Ops... no winner";
   } else if (pcScores > playerScores) {
-    resultMsg.innerHTML = "You lose, try again";
+    resultMsg.innerHTML = "You lost, try again";
   } else {
     resultMsg.innerHTML = "Great, you won!";
   }
